@@ -1,0 +1,7 @@
+
+@import "tailwindcss";
+
+img {
+    width: 200px;
+    height: auto;
+}

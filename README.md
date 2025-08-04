@@ -3,16 +3,14 @@
 	Look files:
 	1. Создание проекта React+Vite Fin.jpg
 	2. Создание проекта React+Vite Fin доп подтверждение.jpg
-	
-	
-1 Create MyFile(s) in src/components/MyFile.tsx
-2 In MyFile.tsx create function fName()
-3
-
-1. Скопировал package.json + package-lock.json в свой проект.
-2. npm i
-3. npm install tailwindcss @tailwindcss/vite
-4. 
+ 
+---Dependencies---
+1. npm i
+2. npm install tailwindcss @tailwindcss/vite
+   If you need eslint
+3. npm install --save-dev eslint-plugin-react-x
+   eslint-plugin-react-dom
+4. npm install --save-dev eslint-plugin-react-dom 
 
 Create Git repository from WebSrtorm:
 Menu Git - GutHub - Share Project on GitHub
@@ -20,40 +18,42 @@ Untap Private
 
 
 - git remote add hw4 https://github.com/Rick-77-2024/ReactHW/
-- git push --set-upstream ррhw4 ReactHW/hw4
+- git push --set-upstream ррhw2.1 ReactHW/hw2.1
 
-
-
-
-1 Create MyFile(s) in src/components/MyFile.tsx
-2 In MyFile.tsx create function fName()
-3
-
-- Create app in App.tsx
-
-ReactHW
+ReactHW2
 ------------------------
-#gi01MZ6v
-з arrays.js взяти масив coursesTitleArray. Вивести кожен його елемент, створивши необхідні моделі та компоненти
-Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).
+#ohm4AivCEBv
 
-#Fs05Kiho
-з arrays.js взяти масив coursesAndDurationArray.
-Вивести кожен його елемент, створивши необхідні моделі та компоненти
-Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).
-
- 
-#kLZQR7Q98
-з arrays.js взяти масив simpsons.
+https://jsonplaceholder.typicode.com/todos – тут масив даних. Ознайомтесь з ним для початку
+Створити компонент TodoComponent, який буде містити інформацію про окремий об’єкт з масиву.
+Створити компонент TodoComponents, в якому відбувається ітерація масиву даних, отриманих з апі.
 Кореневим компонентом є App
-Створити компонент CharacterComponent, який буде містити всю інформацію щодо окремого об’єкту масиву. Розмітка компонента довільна. Опис персонажу передати через children.
-Створити компонент FamilyComponent, в якому буде відбуватись ітерація по масиву simpsons.
-Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).
+----------------------------------------------------------------------------------------------------- 
 
+#x7sQQ3cJ3
 
-#yiugR7&TF
-з arrays.js взяти масиви coursesArray. Створити необхідні моделі та компоненти для того, щоб повноцінно відобразити його
-Стилізація довільна, але обов’язково підключена і мінімально зроблена (хоча б один стиль, який працює).
+https://jsonplaceholder.typicode.com/posts – тут масив даних. Ознайомтесь з ним для початку.
+Створити необхідні моделі та компоненти та вивести всю інформацію за аналогією з попереднім завданням.
+Додати мінімальну стилізацію
+-----------------------------------------------------------------------------------------------------
+
+#98uhQGhaN
+https://jsonplaceholder.typicode.com/comments – тут масив даних.Ознайомтесь з ним для початку.
+Створити необхідні моделі та компоненти та вивести всю інформацію за аналогією з попереднім завданням.
+Додати мінімальну стилізацію
+----------------------------------------------------------------------------------------------------- 
+
+#UHbARYeyHp
+Ознайомитись з документацією https://dummyjson.com/docs
+-----------------------------------------------------------------------------------------------------
+
+#q2faxfR
+Те саме, що і попередні завдання, але дані отримати з апі – https://dummyjson.com
+----------------------------------------------------------------------------------------------------- 
+
+#hQj9gOH
+**Те саме що і попередні завдання, але данні отримати з апі – https://dummyjson.com/products
+-----------------------------------------------------------------------------------------
 
 # React + TypeScript + Vite
 

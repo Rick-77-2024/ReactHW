@@ -1,3 +1,4 @@
+
 import TodoComponent from "../todo-component/TodoComponent.tsx";
 import {useEffect, useState} from "react";
 import {ITodo} from "../../models/ITodo.ts";
@@ -12,6 +13,7 @@ const TodoComponents = () => {
                 setTodos(value);
             })
     }, [])
+
     return (
         <>
             {todos.map(todo => <TodoComponent key={todo.id} item={todo}/>)}

@@ -3,13 +3,16 @@
 	Look files:
 	1. Создание проекта React+Vite Fin.jpg
 	2. Создание проекта React+Vite Fin доп подтверждение.jpg
- 
----Dependencies---
+	
+Install plugin React Buddy	
+	
+ ---Dependencies---
 1. npm i
 2. npm install tailwindcss @tailwindcss/vite
+   npm install tailwindcss @tailwindcss/postcss
+   
    If you need eslint
-3. npm install --save-dev eslint-plugin-react-x
-   eslint-plugin-react-dom
+3. npm install --save-dev eslint-plugin-react-x eslint-plugin-react-dom
 4. npm install --save-dev eslint-plugin-react-dom 
 
 Create Git repository from WebSrtorm:
@@ -17,10 +20,13 @@ Menu Git - GutHub - Share Project on GitHub
 Untap Private
 
 
-- git remote add hw4 https://github.com/Rick-77-2024/ReactHW/
-- git push --set-upstream ррhw2.1 ReactHW/hw2.1
+- git remote add hw2.2 https://github.com/Rick-77-2024/ReactHW/
+- git push --set-upstream ррhw2.2 ReactHW/hw2.2
 
-ReactHW2
+To create fast array + types:
+- Postman - copy first array, in IDE press right mouse button, choose menu "Json2ts", paste all info from "{" to "}" symbols and press "generate".
+
+
 ------------------------
 #ohm4AivCEBv
 

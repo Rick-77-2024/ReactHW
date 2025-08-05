@@ -26,7 +26,6 @@ Untap Private
 To create fast array + types:
 - Postman - copy first array, in IDE press right mouse button, choose menu "Json2ts", paste all info from "{" to "}" symbols and press "generate".
 
-
 ------------------------
 #ohm4AivCEBv
 

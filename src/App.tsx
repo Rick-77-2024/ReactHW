@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import PostComponents from "./components/post-components/PostComponents.tsx";
 
 function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div>
-      <PostComponents/>
-    </div>
-  )
+    return (
+        <div>
+            <PostComponents/>
+        </div>
+    )
 }
 
 export default App

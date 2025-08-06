@@ -1,11 +1,11 @@
 import './App.css'
-import PostComponents from "./components/post-components/PostComponents.tsx";
+import PostsComponent from "./components/posts-component/PostsComponent.tsx";
 
 function App() {
 
     return (
         <div>
-            <PostComponents/>
+            <PostsComponent/>
         </div>
     )
 }

@@ -1,5 +1,7 @@
 
-import {IPost} from "../../models/IPost.ts";
+ 
+
+import type {IPost} from "../../models/IPost.ts";
 import "../post-component/PostComponent.css";
 
 interface PostComponentProps {

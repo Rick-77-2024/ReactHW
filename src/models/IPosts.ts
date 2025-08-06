@@ -13,5 +13,3 @@ export interface Reactions {
   likes: number;
   dislikes: number;
 }
-
-import type { IPosts } from "../../models/IPosts.ts";

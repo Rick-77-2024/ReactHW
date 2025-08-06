@@ -1,4 +1,5 @@
-import {ICart} from "./ICart.ts";
+
+import type {ICart} from "./ICart.ts";
 
 export interface ICartResponseModel {
     total: number;

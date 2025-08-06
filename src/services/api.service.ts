@@ -1,3 +1,4 @@
+
 import type {ICartResponseModel} from "../models/ICartResponseModel.ts";
 import type {IUserResponseModel} from "../models/IUserResponseModel.ts";
 
@@ -9,6 +10,7 @@ export const userService = {
     },
 
 };
+
 export const cartService = {
     getCartsOfUser: async (userId: string): Promise<ICartResponseModel> => {
         return await fetch(baseUrl + '/carts/user/' + userId)

@@ -1,3 +1,4 @@
+
 import type {IUser} from "./IUser.ts";
 
 export interface IUserResponseModel {

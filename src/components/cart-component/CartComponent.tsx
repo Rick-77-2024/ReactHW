@@ -1,4 +1,4 @@
-import {ICart} from "../../models/ICart.ts";
+import type {ICart} from "../../models/ICart.ts";
 
 interface CartComponentProps {
     cart: ICart

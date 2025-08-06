@@ -1,12 +1,12 @@
 
 import './App.css'
-import TodoComponents from "./components/todo-components/TodoComponents.tsx";
+import TodosComponent from "./components/todos-component/TodosComponent.tsx";
 
 function App() {
 
   return (
     <div>
-      <TodoComponents/>
+      <TodosComponent/>
     </div>
   )
 }

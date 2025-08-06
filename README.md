@@ -17,7 +17,7 @@ Menu Git - GutHub - Share Project on GitHub
 Untap Private
 
 
-- git remote add hw4 https://github.com/Rick-77-2024/ReactHW/
+- git remote add hw2.1 https://github.com/Rick-77-2024/ReactHW/
 - git push --set-upstream ррhw2.1 ReactHW/hw2.1
 
 ReactHW2

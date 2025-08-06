@@ -1,7 +1,3 @@
-export interface Reactions {
-  likes: number;
-  dislikes: number;
-}
 
 export interface IPosts {
   id: number;
@@ -12,3 +8,10 @@ export interface IPosts {
   views: number;
   userId: number;
 }
+
+export interface Reactions {
+  likes: number;
+  dislikes: number;
+}
+
+import type { IPosts } from "../../models/IPosts.ts";

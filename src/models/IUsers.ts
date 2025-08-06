@@ -1,3 +1,4 @@
+
 export interface Hair {
   color: string;
   type: string;
@@ -24,16 +25,6 @@ export interface Bank {
   cardType: string;
   currency: string;
   iban: string;
-}
-
-export interface Address {
-  address: string;
-  city: string;
-  state: string;
-  stateCode: string;
-  postalCode: string;
-  coordinates: Coordinates;
-  country: string;
 }
 
 export interface Company {
@@ -79,3 +70,4 @@ export interface IUsers {
   crypto: Crypto;
   role: string;
 }
+

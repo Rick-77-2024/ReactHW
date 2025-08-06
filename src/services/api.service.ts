@@ -1,9 +1,8 @@
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-expect-error
-import { IPost } from "../models/IPost.ts";
+
+import type { IPost } from "../models/IPost";
 
 export const getPost = async (): Promise<IPost[]> => {
-    return await fetch(import.meta.env.VITE_API_URLPOST)
+    return await fetch(import.meta.env.VITE_API_URLPOSTS)
         .then(response => response.json());
 }

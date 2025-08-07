@@ -1,8 +1,43 @@
-# React + TypeScript + Vite
+---First---
+1. Menu File - New - Project.
+	Look files:
+	1. Создание проекта React+Vite Fin.jpg
+	2. Создание проекта React+Vite Fin доп подтверждение.jpg
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add in file package.json in block "dependencies"the line:
+	"react-router-dom": "^7.0.1" and install
+ 
+ 
+---Dependencies---
 
-Currently, two official plugins are available:
+Add to file in dependencies "react-router-dom": "7.0.1"
+1. npm i
+2. npm install tailwindcss @tailwindcss/vite
+   If you need eslint
+3. npm install --save-dev eslint-plugin-react-x
+   eslint-plugin-react-dom
+4. npm install --save-dev eslint-plugin-react-dom
+5. npm install react-router-dom --save
+
+Create Git repository from WebSrtorm:
+Menu Git - GutHub - Share Project on GitHub
+Untap Private
+
+- git remote add hw4.1 https://github.com/Rick-77-2024/ReactHW/
+- git push --set-upstream ррhw4.1 ReactHW/hw3.1
+
+ReactHW4
+FE. ДЗ 4
+ 
+#mtNy6QQ
+
+Є наступні сторінки:
+
+UsersPage – відтворює користувачів з api dummyjson.com (довільна розмітка та кількість інфи про об’єкт).
+
+Додати кнопки “вперед” “назад” для пагінації об’єктів.
+ 
+------------------------
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
@@ -67,3 +102,7 @@ export default tseslint.config([
   },
 ])
 ```
+
+git rm .idea/ -r --cached / git rm --cached -r .idea/
+git add -u .idea/
+git commit -m "Removed the .idea folder"

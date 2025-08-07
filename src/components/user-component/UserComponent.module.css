@@ -1,0 +1,11 @@
+
+.label {
+  font-weight: bold;
+  color: #1976d2;
+  margin-right: 4px;
+}
+
+.value {
+  color: #333;
+  margin-right: 16px;
+}

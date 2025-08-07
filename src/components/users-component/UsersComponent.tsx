@@ -1,3 +1,4 @@
+
 import {useEffect, useState} from "react";
 import {UserComponent} from "../user-component/UserComponent.tsx";
 import {getUsers} from "../../service/api.service.tsx";
@@ -15,7 +16,6 @@ export const UsersComponent = () => {
         getUsers(currentPage)
         .then(({users}:IUserResponce) => setUsers(users))
     }, [query])
-
 
     return (
         <div>

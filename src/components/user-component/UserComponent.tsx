@@ -1,3 +1,4 @@
+
 import {IUser} from "../../models/IUser.ts";
 
 interface UserComponentProps {
@@ -7,7 +8,7 @@ interface UserComponentProps {
 export const UserComponent = ({user}: UserComponentProps) => {
     return (
         <div>
-            {user.id} {user.firstName} {user.lastName}
+            Id {user.id} Name {user.firstName} SurName {user.lastName} Gender {user.gender}
         </div>
     );
 };

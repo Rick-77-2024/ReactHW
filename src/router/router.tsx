@@ -2,13 +2,13 @@
 import {createBrowserRouter} from "react-router";
 import App from "../App.tsx";
 import {CarsPage} from "../pages/CarsPage.tsx";
-import {CreateCarsPage} from "../pages/CreateCarsPage.tsx";
+import {CreateCarPage} from "../pages/CreateCarPage.tsx";
 
-export const router = createBrowserRouter([
+export const routes = createBrowserRouter([
     {
-        path: '/', element: <App/>,children:[
-            {path: '/cars', element: <CarsPage/>},
-            {path: '/cars/create', element: <CreateCarsPage/>}
+        path: '/', element: <App/>, children: [
+            {path: 'cars', element: <CarsPage/>},
+            {path: 'cars/create', element: <CreateCarPage/>},
         ]
     }
 ]);

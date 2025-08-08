@@ -1,10 +1,25 @@
 
-import {CarsComponent} from "../components/cars-component/CarsComponent.tsx";
+import {useEffect, useState} from "react";
+import {getCars} from "../services/api.service.ts";
+import {type ICar} from "../models/ICar.ts";
 
 export const CarsPage = () => {
+
+    const [cars, setCars] = useState<ICar[]>([]);
+    useEffect(() => {
+        getCars().then((cars) => {
+            setCars(cars);
+
+        })
+    }, []);
+
     return (
-        <div>
-            <CarsComponent/>
-        </div>
+        <>
+            {cars.map((car) => (
+                <div key={car.id}>
+                    {car.id} - {car.brand}
+                </div>
+            ))}
+        </>
     );
 };

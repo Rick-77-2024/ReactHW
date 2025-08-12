@@ -1,8 +1,56 @@
-# React + TypeScript + Vite
+---First---
+1. Menu File - New - Project.
+	Look files:
+	1. Создание проекта React+Vite Fin.jpg
+	2. Создание проекта React+Vite Fin доп подтверждение.jpg
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add in file package.json in block "dependencies"the line:
+	"react-router-dom": "^7.0.1" and install
+ 
+ ---Dependencies---
 
-Currently, two official plugins are available:
+Add to file in dependencies "react-router-dom": "7.0.1"
+1. npm i
+2. npm install react-router-dom --save
+3. npm install axios
+4. npm install -g react-devtools
+5. npm eslint-plugin-react-dom
+6. npm install --save-dev eslint-plugin-react-x
+	
+	npm install tailwindcss @tailwindcss/vite
+   If you need eslint
+3. 
+   eslint-plugin-react-dom
+4. npm install --save-dev eslint-plugin-react-dom
+5. npm install react-hook-form
+6. npm install @hookform/resolvers
+7. npm install joi
+
+Create Git repository from WebSrtorm:
+Menu Git - GutHub - Share Project on GitHub
+UnTap Private
+
+- git remote add hw7.3 https://github.com/Rick-77-2024/ReactHW/
+- git push --set-upstream ррhw7.3 ReactHW/hw7.3
+
+FE. ДЗ 7
+
+1. Відтворити і запам’ятати процедуру використання useCallback, useMemo, memo. Описати кожен рядок, що і навіщо робити
+
+2. #cf69cHp
+
+Створити кастомний  хук,  який буде повертати відповіді з апі і заміняти useState+ useEffect.  ендпоінт апі –   аргумент вашого хука. Продумати логіку типізації відповіді.
+
+Приклад сигнатури:
+
+useFetch<T>(url)
+
+3. #GP0nA6rxivp
+
+Зробити дерево компонентів, у дві сторони. Чим глибше, тим краще для вас.
+Зробити контекст. Зробити кнопку, яка буде міняти “тему” зі світлої на темну.
+
+------------------------
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
@@ -67,3 +115,7 @@ export default tseslint.config([
   },
 ])
 ```
+
+git rm .idea/ -r --cached / git rm --cached -r .idea/
+git add -u .idea/
+git commit -m "Removed the .idea folder"

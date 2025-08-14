@@ -1,10 +1,10 @@
 
-import {createBrowserRouter, type RouteObject} from "react-router-dom";
-import {MainLayout} from "../layouts/MainLayout.tsx";
-import {UsersPage} from "../pages/UsersPage.tsx";
-import {PostsPage} from "../pages/PostsPage.tsx";
-import {UserPage} from "../pages/UserPage.tsx";
-import {CommentsPage} from "../pages/CommentsPage.tsx";
+import {createBrowserRouter, type RouteObject } from 'react-router-dom';
+import ComplexPage, { CommentsPage } from '../pages/ComplexPage.tsx';
+import { MainLayout } from '../layouts/MainLayout.tsx';
+import { UsersPage } from '../pages/UsersPage.tsx';
+import { UserPage } from '../pages/UserPage.tsx';
+import { PostsPage } from '../pages/PostsPage.tsx';
 
 const routes: RouteObject[] = [
     {
@@ -13,8 +13,9 @@ const routes: RouteObject[] = [
             {path: 'users/:id', element: <UserPage/>},
             {path: 'posts', element: <PostsPage/>},
             {path: 'comments', element: <CommentsPage/>},
+            {path: 'complex', element:<ComplexPage />}
         ]
     }
-
 ];
+
 export const router = createBrowserRouter(routes);

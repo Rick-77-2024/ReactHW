@@ -1,6 +1,7 @@
 
 import {createBrowserRouter, type RouteObject } from 'react-router-dom';
-import ComplexPage, { CommentsPage } from '../pages/ComplexPage.tsx';
+import ComplexPage from '../pages/ComplexPage.tsx';
+import { CommentsPage } from '../pages/CommentsPage.tsx';
 import { MainLayout } from '../layouts/MainLayout.tsx';
 import { UsersPage } from '../pages/UsersPage.tsx';
 import { UserPage } from '../pages/UserPage.tsx';

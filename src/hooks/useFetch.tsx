@@ -10,7 +10,7 @@ export const useFetch = <T,>(url: string, defaultValue:T) => {
             .then((value) => {
                 setObj(value)
             })
-    }, []);
+    }, [url]);
 
     return obj;
 }

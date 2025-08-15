@@ -1,4 +1,3 @@
-
 import {createBrowserRouter, type RouteObject } from 'react-router-dom';
 import ComplexPage from '../pages/ComplexPage.tsx';
 import { CommentsPage } from '../pages/CommentsPage.tsx';

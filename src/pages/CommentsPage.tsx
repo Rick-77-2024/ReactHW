@@ -1,23 +1,25 @@
 
-import {useAppSelector} from "../redux/hooks/useAppSelector.tsx";
-import {commentSliceActions} from "../redux/slices/commentSlice/commentSlice.ts";
-import {useAppDispatch} from "../redux/hooks/useAppDispatch.tsx";
-import {useEffect} from "react";
+import { useEffect } from "react";
+import { useAppSelector } from "../redux/hooks/useAppSelector";
+import { useAppDispatch } from "../redux/hooks/useAppDispatch";
+import { commentSliceActions } from "../redux/slices/commentSlice/commentSlice";
 
 export const CommentsPage = () => {
-    const {comments, loadState} = useAppSelector(({commentSlice})=>commentSlice);
+    const { comments, loadState } = useAppSelector(({ commentSlice }) => commentSlice);
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(commentSliceActions.loadComments());
-    },[])
+        if (comments.length === 0) {
+            dispatch(commentSliceActions.loadComments());
+        }
+    }, [comments.length, dispatch]);
 
     return (
         <div>
-            {!loadState && <div>Loading</div>}
-            {comments.map((comment) => {
-                return <div key={comment.id}>{comment.name}</div>
-            })}
+            {!loadState && <div>Loading...</div>}
+            {comments.map((comment) => (
+                <div key={comment.id}>{comment.name}</div>
+            ))}
         </div>
     );
 };

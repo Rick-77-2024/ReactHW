@@ -1,4 +1,3 @@
-
 import {createAsyncThunk, createSlice, isFulfilled, type PayloadAction} from "@reduxjs/toolkit";
 import {type IPost} from "../../../models/IPost.ts";
 
@@ -9,19 +8,19 @@ type postSliceType = {
 
 const initialState: postSliceType = {posts: [], loadState: false};
 
-const loadPosts= createAsyncThunk(
+const loadPosts = createAsyncThunk(
     'postSlice/loadPosts',
-    async (_, thunkAPI)=>{
+    async (_, thunkAPI) => {
         try {
             const posts = await fetch('https://jsonplaceholder.typicode.com/posts')
-                .then(response => response.json())
+                .then(response => response.json());
             return thunkAPI.fulfillWithValue(posts);
-        }catch(e){
+        } catch (e) {
             console.log(e);
             return thunkAPI.rejectWithValue(e);
         }
     }
-)
+);
 
 export const postSlice = createSlice({
     name: 'postSlice',
@@ -31,21 +30,21 @@ export const postSlice = createSlice({
             state.loadState = action.payload;
         }
     },
-    extraReducers:builder => {
+    extraReducers: builder => {
         builder
-            .addCase(loadPosts.fulfilled, (state, action:PayloadAction<IPost[]>) => {
-                state.posts=action.payload
+            .addCase(loadPosts.fulfilled, (state, action: PayloadAction<IPost[]>) => {
+                state.posts = action.payload;
             })
             .addCase(loadPosts.rejected, (state, action) => {
-                console.log(action)
+                console.log(action);
                 console.log(state);
             })
-            .addMatcher(isFulfilled( loadPosts), (state) => {
+            .addMatcher(isFulfilled(loadPosts), (state) => {
                 state.loadState = true;
-            })
+            });
     }
-})
+});
 
 export const postSliceActions = {
     ...postSlice.actions, loadPosts
-}
+};

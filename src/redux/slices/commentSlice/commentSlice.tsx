@@ -1,27 +1,26 @@
-
-import {createAsyncThunk, createSlice, isFulfilled, isRejected, type PayloadAction} from "@reduxjs/toolkit";
-import {type IComment} from "../../../models/IComment.ts";
+import { createAsyncThunk, createSlice, isFulfilled, isRejected, type PayloadAction } from "@reduxjs/toolkit";
+import { type IComment } from "../../../models/IComment";
 
 type CommentSliceType = {
     comments: IComment[];
     loadState: boolean;
 }
 
-const initialState: CommentSliceType = {comments: [], loadState: false};
+const initialState: CommentSliceType = { comments: [], loadState: false };
 
 export const loadComments = createAsyncThunk(
     'commentSlice/loadComments',
-    async(_, thunkAPI) => {
-        try{
+    async (_, thunkAPI) => {
+        try {
             const comments = await fetch('https://jsonplaceholder.typicode.com/comments')
                 .then(response => response.json());
-            return thunkAPI.fulfillWithValue(comments)
-        }catch(e){
+            return thunkAPI.fulfillWithValue(comments);
+        } catch (e) {
             console.error(e);
-            return thunkAPI.rejectWithValue(e)
+            return thunkAPI.rejectWithValue(e);
         }
     }
-)
+);
 
 export const commentSlice = createSlice({
     name: "commentSlice",
@@ -34,7 +33,7 @@ export const commentSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(loadComments.fulfilled, (state, action: PayloadAction<IComment[]>) => {
-                state.comments = action.payload
+                state.comments = action.payload;
             })
             .addCase(loadComments.rejected, (state, action) => {
                 console.log(state);
@@ -43,12 +42,11 @@ export const commentSlice = createSlice({
             .addMatcher(isFulfilled(loadComments), (state) => {
                 state.loadState = true;
             })
-            .addMatcher(isRejected( loadComments), (state) => {
+            .addMatcher(isRejected(loadComments), (state) => {
                 console.log(state);
             })
-
 });
 
 export const commentSliceActions = {
     ...commentSlice.actions, loadComments
-}
+};
